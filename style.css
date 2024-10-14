@@ -1,0 +1,314 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5vw;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #FFFEFA;
+    overflow-x: clip; /* fix it later */
+}
+
+.gray { color: #7c7c7c; }
+
+.highlight1 {
+    background-image: url('images/highlights/highlight1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    padding: 0 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.highlight2 {
+    background-image: url('images/highlights/highlight2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    padding: 0 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.highlight3 {
+    background-image: url('images/highlights/highlight3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    padding: 0 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.highlight4 {
+    background-image: url('images/highlights/highlight4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 26px;
+    padding: 0 0px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Header */
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* wrapper to hold title and navigation */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 375px; /* space between the title and navigation */
+}
+
+.title {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #727272;
+}
+
+/* Main */
+.main-content {
+    padding: 20px 20px;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.profile-image {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -20px;
+    margin-left: 50px;
+}
+
+.intro-text {
+    max-width: 320px;
+}
+
+.intro-text h2 {
+    margin-top: 0;
+    margin-left: 0px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-425%);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(177, 138, 255, 0.6);
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left-button {
+    left: calc(50% + 220px);
+}
+
+.right-button {
+    left: calc(50% + 250px);
+}
+
+.scroll-button:hover {
+    background-color: rgba(79, 79, 79, 0.8);
+}
+
+/* Cards */
+.rs-cards-shelf {
+    max-width: 100%;
+    margin-top: -30px; /* Brings it up a little bit */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.as-l-container.rs-cards-shelf-header {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rs-cards-shelf-mainheader {
+    padding-left: 0;
+    padding-bottom: 4px;
+    text-align: left;
+    margin-right: 310px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.as-l-container {
+    margin-bottom: -27px;
+}
+
+.rf-cards-scroller {
+    position: relative;
+    width: 100%;
+}
+
+/* scroller crop to center cards */
+.rf-cards-scroller-crop {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.rf-cards-scroller-crop::-webkit-scrollbar {
+    display: none;
+}
+
+.rf-cards-scroller-content {
+    display: flex;
+    gap: 5px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.rf-cards-scroller-content::before,
+.rf-cards-scroller-content::after {
+    content: '';
+    flex-shrink: 0;
+}
+
+.rf-cards-scroller-content::before {
+    width: 1620px;
+}
+
+.rf-cards-scroller-content::after {
+    width: 15px;
+}
+
+
+.rf-cards-scroller-itemview {
+    flex: 0 0 auto;
+    width: 340px;
+    max-width: 340px;
+    height: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+    padding-bottom: 25px;
+}
+
+.rf-cards-scroller-itemview:hover {
+    transform: scale(1.02);
+}
+
+.rf-ccard {
+    position: relative;
+}
+
+.rf-ccard-img-full-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text overlay */
+.rf-ccard-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background: transparent;
+    padding: 21px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.rf-ccard-overlay span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rf-ccard-overlay .first-txt {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: -24px;
+    display: block;
+}
+
+.rf-ccard-overlay .second-txt {
+    font-size: 17px;
+    display: block;
+}
+
+.card-footer {
+    font-size: 16px;
+    color: #4d4d4d;
+    padding: 5px 5px;
+    text-align: left;
+    background: transparent;
+}
+
+/* Optional: Smooth scroll for trackpad swipe */
+.rf-cards-scroller-crop {
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.scrollable-element::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-element {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #FFFEFA; /* Matches the body background color */
+    padding: 40px 0;
+    text-align: center; /* Center the content */
+}
+
+.site-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #727272;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 650px) {
+}

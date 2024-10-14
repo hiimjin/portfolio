@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jin Lee Portfolio</title>
+    <!-- Include the Source Sans 3 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="content-wrapper">
+            <h1 class="title">Jin Lee</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="intro-section">
+            <img src="images/Group 1.png" alt="Profile" class="profile-image">
+            <div class="intro-text">
+                <h2>Hello, I'm a <span class="highlight1">designer-</span><br><span class="highlight2">developer</span> passionate <br>about creating things <br> that can help <span class="highlight3">people.</span></h2>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Card Shelf -->
+    <div class="rs-cards-shelf">
+        <div class="as-l-container rs-cards-shelf-header">
+            <h2 class="rs-cards-shelf-mainheader"><span class="semibold"><span class="highlight4">Click a card.</span><span class="gray"> See what I've <span class="custombr"><br></span>been working on recently.</span></span></h2>
+        </div>
+        <div class="rf-cards-scroller">
+            <!-- Navigation Buttons -->
+            <button id="scroll-left" class="scroll-button left-button">&#10094;</button>
+            <button id="scroll-right" class="scroll-button right-button">&#10095;</button>
+
+            <div class="rf-cards-scroller-crop">
+                <div class="rf-cards-scroller-content">
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/web.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">This Website</span><br>
+                                    <span class="second-txt">Designer and Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">HTML, CSS, JavaScript</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/vineyard.png">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Vineyard App UI/UX</span><br>
+                                    <span class="second-txt">iOS Club, Designer and Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Swift, Figma, Github, Prototyping</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/three.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Three App UI/UX</span><br>
+                                    <span class="second-txt">iOS Club, Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Swift, Github</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/musicode.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Music and Coding</span><br>
+                                    <span class="second-txt">TAP, Student Researcher</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">UX Research, HCI, Python</div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/filler.png">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">IEQ and ML Framework</span><br>
+                                    <span class="second-txt">WELab, Student Researcher</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">UX Research, Machine Learning</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/ksea2.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Design Template</span><br>
+                                    <span class="second-txt">KSEA, Promotional Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Adobe Illustrator, User interview, Prototyping</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Jin Lee. Thank you for coming.</p>
+        </div>
+    </footer>
+
+    <script>
+        const scroller = document.querySelector('.rf-cards-scroller-crop');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+        const cardElement = document.querySelector('.rf-cards-scroller-itemview');
+        const cardStyle = getComputedStyle(cardElement);
+        const cardWidth = cardElement.offsetWidth + parseInt(cardStyle.marginLeft) + parseInt(cardStyle.marginRight);
+    
+        scrollLeftBtn.addEventListener('click', () => {
+            scroller.scrollBy({ left: -cardWidth*2.03, behavior: 'smooth' });
+        });
+        scrollRightBtn.addEventListener('click', () => {
+            scroller.scrollBy({ left: cardWidth*2.03, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
