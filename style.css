@@ -356,4 +356,11 @@ body, html {
     body, html {
         margin-top: 2.5vw;
     }
+
+    .left-button {
+        left: calc(50% + 113px);
+    }
+    .right-button {
+        left: calc(50% + 145px);
+    }
 }
