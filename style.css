@@ -201,16 +201,12 @@ body, html {
     justify-content: center;
     flex-shrink: 0;
     margin-top: 3px;
+    margin-left: 1620px;
 }
 
-.rf-cards-scroller-content::before,
 .rf-cards-scroller-content::after {
     content: '';
     flex-shrink: 0;
-}
-
-.rf-cards-scroller-content::before {
-    width: 1620px;
 }
 
 .rf-cards-scroller-content::after {
@@ -317,7 +313,7 @@ body, html {
     font-size: 16px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .content-wrapper {
         gap: 200px;
     }
@@ -350,9 +346,7 @@ body, html {
         margin-right: 140px;
         font-size: 21px;
     }
-    .rf-cards-scroller-content::before {
-        width: 1810px;
-    }
+
     body, html {
         margin-top: 2.5vw;
     }
@@ -362,5 +356,9 @@ body, html {
     }
     .right-button {
         left: calc(50% + 145px);
+    }
+
+    .rf-cards-scroller-content {
+        margin-left: 1820px;
     }
 }
