@@ -201,12 +201,16 @@ body, html {
     justify-content: center;
     flex-shrink: 0;
     margin-top: 3px;
-    margin-left: 1620px;
 }
 
+.rf-cards-scroller-content::before,
 .rf-cards-scroller-content::after {
     content: '';
     flex-shrink: 0;
+}
+
+.rf-cards-scroller-content::before {
+    width: 1620px;
 }
 
 .rf-cards-scroller-content::after {
@@ -313,7 +317,7 @@ body, html {
     font-size: 16px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .content-wrapper {
         gap: 200px;
     }
@@ -357,8 +361,7 @@ body, html {
     .right-button {
         left: calc(50% + 145px);
     }
-
-    .rf-cards-scroller-content {
-        margin-left: 1820px;
+    .rf-cards-scroller-content::before {
+        margin-left: 450px;
     }
 }
