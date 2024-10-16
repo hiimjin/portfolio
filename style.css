@@ -198,25 +198,11 @@ body, html {
     gap: 5px;
     align-items: stretch;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     flex-shrink: 0;
     margin-top: 3px;
+    padding-left: 1605px; /* Centers the cards */
 }
-
-.rf-cards-scroller-content::before,
-.rf-cards-scroller-content::after {
-    content: '';
-    flex-shrink: 0;
-}
-
-.rf-cards-scroller-content::before {
-    width: 1620px;
-}
-
-.rf-cards-scroller-content::after {
-    width: 15px;
-}
-
 
 .rf-cards-scroller-itemview {
     flex: 0 0 auto;
@@ -371,7 +357,8 @@ body, html {
     .right-button {
         left: calc(50% + 145px);
     }
-    .rf-cards-scroller-content::before {
-        margin-left: 195px;
+
+    .rf-cards-scroller-content {
+        padding-left: 1800px;
     }
 }
