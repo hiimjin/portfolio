@@ -349,6 +349,7 @@ body, html {
         transform: translateY(-450%);
         cursor: default;
         pointer-events: none;
+        -webkit-touch-callout: none;
     }
     .left-button {
         left: calc(50% + 113px);
