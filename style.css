@@ -120,7 +120,7 @@ body, html {
 .scroll-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-425%);
+    transform: translateY(-470%);
     background-color: rgba(255, 255, 255, 0.4);
     color: rgb(177, 138, 255, 0.6);
     border: none;
@@ -169,22 +169,23 @@ body, html {
 }
 
 .as-l-container {
-    margin-bottom: -27px;
+    margin-bottom: -25px;
 }
+
 
 .rf-cards-scroller {
     position: relative;
     width: 100%;
 }
 
-/* scroller crop to center cards */
 .rf-cards-scroller-crop {
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    padding: 5px 0; /* vertical padding for hover effect */
     width: 100%;
     display: flex;
-    justify-content: center;
+
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -201,6 +202,8 @@ body, html {
     justify-content: flex-start;
     flex-shrink: 0;
     margin-top: 3px;
+    padding-left: calc(50% - 300px);
+    padding-right: 15px;
 }
 
 .rf-cards-scroller-itemview {
@@ -217,16 +220,8 @@ body, html {
     padding-bottom: 25px;
 }
 
-.first-card {
-    padding-left: 1580px;
-}
-
 .rf-cards-scroller-itemview:hover {
     transform: scale(1.02);
-}
-
-.rf-ccard {
-    position: relative;
 }
 
 .rf-ccard-img-full-wrapper img {
@@ -306,7 +301,7 @@ body, html {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
     .content-wrapper {
         gap: 190px;
     }
@@ -331,7 +326,6 @@ body, html {
     .intro-text {
         max-width: 100%;
     }
-    /* Adjust navigation if needed */
     .nav {
         margin-left: auto;
     }
@@ -352,7 +346,7 @@ body, html {
     .scroll-button {
         position: absolute;
         top: 50%;
-        transform: translateY(-415%);
+        transform: translateY(-450%);
     }
     .left-button {
         left: calc(50% + 113px);
@@ -361,7 +355,14 @@ body, html {
         left: calc(50% + 145px);
     }
 
-    .first-card {
-        padding-left: 1785px;
+    .rf-cards-scroller-content {
+        display: flex;
+        gap: 5px;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        margin-top: 3px;
+        padding-left: calc(50% - 200px);
     }
 }
