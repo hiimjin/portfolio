@@ -347,6 +347,8 @@ body, html {
         position: absolute;
         top: 50%;
         transform: translateY(-450%);
+        cursor: default;
+        pointer-events: none;
     }
     .left-button {
         left: calc(50% + 113px);

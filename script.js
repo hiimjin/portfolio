@@ -6,8 +6,8 @@ const cardStyle = getComputedStyle(cardElement);
 const cardWidth = cardElement.offsetWidth + parseInt(cardStyle.marginLeft) + parseInt(cardStyle.marginRight);
 
 scrollLeftBtn.addEventListener('click', () => {
-    scroller.scrollBy({ left: -cardWidth * 1.10, behavior: 'smooth' });
+    scroller.scrollBy({ left: -cardWidth * 1.025, behavior: 'smooth' });
 });
 scrollRightBtn.addEventListener('click', () => {
-    scroller.scrollBy({ left: cardWidth * 1.10, behavior: 'smooth' });
+    scroller.scrollBy({ left: cardWidth * 1.025, behavior: 'smooth' });
 });
