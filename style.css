@@ -302,6 +302,9 @@ body, html {
 }
 
 @media screen and (max-width: 650px) {
+    .highlight4 {
+        background-position: center 23px;
+    }
     .content-wrapper {
         gap: 190px;
     }
