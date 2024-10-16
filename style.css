@@ -201,7 +201,6 @@ body, html {
     justify-content: flex-start;
     flex-shrink: 0;
     margin-top: 3px;
-    padding-left: 1605px; /* Centers the cards */
 }
 
 .rf-cards-scroller-itemview {
@@ -216,6 +215,10 @@ body, html {
     transition: transform 0.3s ease;
     margin: 0 10px;
     padding-bottom: 25px;
+}
+
+.first-card {
+    padding-left: 1580px; /* Center 4 cards */
 }
 
 .rf-cards-scroller-itemview:hover {
@@ -358,7 +361,8 @@ body, html {
         left: calc(50% + 145px);
     }
 
-    .rf-cards-scroller-content {
-        padding-left: 1800px;
+    .first-card {
+        padding-left: 1785px; /* Center 4 cards */
     }
+
 }
