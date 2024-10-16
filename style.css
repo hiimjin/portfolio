@@ -218,7 +218,7 @@ body, html {
 }
 
 .first-card {
-    padding-left: 1580px; /* Center 4 cards */
+    padding-left: 1580px;
 }
 
 .rf-cards-scroller-itemview:hover {
@@ -306,7 +306,7 @@ body, html {
     font-size: 16px;
 }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .content-wrapper {
         gap: 190px;
     }
@@ -362,7 +362,6 @@ body, html {
     }
 
     .first-card {
-        padding-left: 1785px; /* Center 4 cards */
+        padding-left: 1785px;
     }
-
 }
