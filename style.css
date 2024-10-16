@@ -360,6 +360,11 @@ body, html {
         margin-top: 2.5vw;
     }
 
+    .scroll-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-415%);
+    }
     .left-button {
         left: calc(50% + 113px);
     }
