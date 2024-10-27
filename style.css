@@ -337,6 +337,17 @@ body, html {
         margin-top: -45px;
     }
 
+    .rf-cards-scroller-itemview {
+        width: 280px;
+    }
+    .rf-ccard-overlay .first-txt {
+        font-size: 21px;
+    }
+    .rf-ccard-overlay .second-txt {
+        font-size: 15px;
+        display: block;
+    }
+
     .rs-cards-shelf-mainheader {
         margin-right: 140px;
         font-size: 20px;
