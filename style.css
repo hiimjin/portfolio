@@ -256,12 +256,14 @@ body, html {
     font-weight: 500;
     margin-bottom: -24px;
     display: block;
+    -webkit-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .rf-ccard-overlay .second-txt {
     font-size: 17px;
     display: block;
+    -webkit-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
