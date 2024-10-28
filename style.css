@@ -317,6 +317,7 @@ body, html {
     .highlight4 {
         background-position: center 23px;
     }
+
     .content-wrapper {
         gap: 190px;
     }
@@ -333,9 +334,9 @@ body, html {
         justify-content: center;
     }
     .intro-text h2 {
-        margin-left: 96px;
+        margin-left: 105px;
         margin-top: -5px;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .intro-text {
