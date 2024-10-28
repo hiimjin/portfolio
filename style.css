@@ -120,7 +120,7 @@ body, html {
 .scroll-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-443%);
+    transform: translateY(-430%);
     background-color: rgba(255, 255, 255, 0.4);
     color: rgb(177, 138, 255, 0.6);
     border: none;
@@ -363,7 +363,7 @@ body, html {
     .scroll-button {
         position: absolute;
         top: 50%;
-        transform: translateY(-430%);
+        transform: translateY(-380%);
         cursor: default;
         pointer-events: none;
         -webkit-touch-callout: none;
