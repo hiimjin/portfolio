@@ -43,7 +43,7 @@ body, html {
     background-image: url('images/highlights/highlight4.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center 26px;
+    background-position: center 27px;
     padding: 0 0px;
     position: relative;
     z-index: 1;
@@ -315,7 +315,7 @@ body, html {
 
 @media screen and (max-width: 650px) {
     .highlight4 {
-        background-position: center 22px;
+        background-position: center 23px;
     }
     .highlight1, .highlight2, .highlight3  {
         background-position: center 30px;
