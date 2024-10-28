@@ -346,11 +346,14 @@ body, html {
         width: 280px;
     }
     .rf-ccard-overlay .first-txt {
-        font-size: 21px;
+        font-size: 22px;
     }
     .rf-ccard-overlay .second-txt {
-        font-size: 15px;
+        font-size: 16px;
         display: block;
+    }
+    .card-footer {
+        font-size: 14px;
     }
 
     .rs-cards-shelf-mainheader {
