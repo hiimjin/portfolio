@@ -44,7 +44,7 @@ body, html {
     z-index: 1;
 }
 
-.highlight4 {
+/* .highlight4 {
     background-image: url('images/highlights/highlight4.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -52,7 +52,7 @@ body, html {
     padding: 0 0px;
     position: relative;
     z-index: 1;
-}
+} */
 
 
 /* Header */
@@ -433,9 +433,10 @@ body, html {
 }
 
 @media screen and (max-width: 650px) {
-    .highlight4 {
+    /* .highlight4 {
         background-position: center 23px;
-    }
+    } */
+
     .highlight1, .highlight2, .highlight3  {
         background-position: center 30px;
     }
@@ -489,6 +490,7 @@ body, html {
     .rs-cards-shelf-mainheader {
         margin-right: 140px;
         font-size: 20px;
+        flex-wrap: nowrap;
     }
 
     body, html {
@@ -517,5 +519,28 @@ body, html {
         flex-shrink: 0;
         margin-top: 3px;
         padding-left: calc(50% - 190px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Prevent flex containers from wrapping */
+    .content-wrapper,
+    .intro-section,
+    .rf-cards-scroller-content {
+        flex-wrap: nowrap;
+    }
+
+    .intro-text h2,
+    .rs-cards-shelf-mainheader,
+    .site-footer p {
+        white-space: nowrap;
+    }
+
+    body, html {
+        overflow-x: auto;
+    }
+
+    .rf-cards-scroller-crop {
+        overflow-x: auto;
     }
 }
