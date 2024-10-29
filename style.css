@@ -1,10 +1,15 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     margin-top: 1.5vw;
     font-family: 'Source Sans 3', sans-serif;
     background-color: #FFFEFA;
-    overflow-x: clip; /* fix it later */
+    /* overflow-x: hidden; fix it later */
 }
 
 .gray { color: #7c7c7c; }
@@ -121,7 +126,7 @@ body, html {
     position: absolute;
     top: 50%;
     transform: translateY(-430%);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: transparent;
     color: rgb(177, 138, 255, 0.6);
     border: none;
     padding: 10px;
@@ -140,7 +145,7 @@ body, html {
 }
 
 .scroll-button:hover {
-    background-color: rgba(79, 79, 79, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Cards */
@@ -286,6 +291,120 @@ body, html {
 .scrollable-element {
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+/* Modal Overlay Styles */
+/* Added styles for the modal overlay and its content */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10; /* Ensure it sits on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #FFFEFA;
+    margin: 5% auto; /* Center the modal */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Close Button */
+.modal-close {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #000;
+}
+
+/* Modal Body Content */
+.modal-body {
+    margin-top: 40px;
+}
+
+.modal-body h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-body h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.modal-body p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Slider Styles */
+/* Added styles for the slider within the modal */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+/* Slides */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
