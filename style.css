@@ -429,14 +429,14 @@ body, html {
 }
 
 @media screen and (max-width: 1025px) {
-    .scroll-button {
+    /* .scroll-button {
         display: none;
-    }
-    /* disable buttons
+    } */
+
     .scroll-button {
         pointer-events: none;
         -webkit-touch-callout: none;
-    } */
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -505,9 +505,7 @@ body, html {
     }
 
     .scroll-button {
-        position: absolute;
-        top: 50%;
-        top: -30%;
+        top: -20%;
         cursor: default;
     }
     .left-button {
