@@ -8,7 +8,7 @@ body, html {
     padding: 0;
     margin-top: 1.5vw;
     font-family: 'Source Sans 3', sans-serif;
-    background-color: #FFFEFA;
+    background-color: #f9f6ef;
     /* overflow-x: hidden; fix it later */
 }
 
@@ -409,7 +409,7 @@ body, html {
 
 /* Footer */
 .site-footer {
-    background-color: #FFFEFA; /* Matches the body background color */
+    background-color: #f9f6ef; /* Matches the body background color */
     padding: 40px 0;
     text-align: center; /* Center the content */
 }
