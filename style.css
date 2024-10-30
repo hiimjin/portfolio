@@ -429,9 +429,8 @@ body, html {
 }
 
 @media screen and (max-width: 960px) {
-    .scroll-button {
-        pointer-events: none;
-        -webkit-touch-callout: none;
+    .scroll-button:hover {
+        background-color: transparent;
     }
     .prev:hover, .next:hover {
         background-color: transparent;
