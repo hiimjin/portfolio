@@ -109,6 +109,9 @@ body, html {
     object-fit: cover;
     margin-top: -20px;
     margin-left: 50px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
+    box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
 }
 
 .intro-text {
@@ -429,6 +432,9 @@ body, html {
     .scroll-button {
         pointer-events: none;
         -webkit-touch-callout: none;
+    }
+    .prev:hover, .next:hover {
+        background-color: transparent;
     }
 }
 
