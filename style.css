@@ -474,7 +474,7 @@ body, html {
     }
 
     .rf-cards-scroller-itemview {
-        width: 280px;
+        width: 290px;
     }
     .rf-ccard-overlay .first-txt {
         font-size: 22px;
@@ -500,7 +500,7 @@ body, html {
     .scroll-button {
         position: absolute;
         top: 50%;
-        transform: translateY(-380%);
+        transform: translateY(-390%);
         cursor: default;
     }
     .left-button {
