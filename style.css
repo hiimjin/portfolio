@@ -125,7 +125,7 @@ body, html {
 .scroll-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-430%);
+    transform: translateY(-425%);
     background-color: transparent;
     color: rgb(177, 138, 255, 0.6);
     border: none;
@@ -272,7 +272,7 @@ body, html {
 
 .card-footer {
     font-size: 16px;
-    color: #4d4d4d;
+    color: #7c7c7c;
     padding: 5px 5px;
     text-align: left;
     background: transparent;
@@ -417,7 +417,7 @@ body, html {
 .site-footer .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    color: #727272;
+    color: #7c7c7c;
 }
 
 .site-footer p {
