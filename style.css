@@ -429,13 +429,21 @@ body, html {
 }
 
 @media screen and (max-width: 960px) {
-    /* .scroll-button {
+    .scroll-button {
+        display: none;
+    }
+
+    /* disable buttons
+    .scroll-button {
         pointer-events: none;
         -webkit-touch-callout: none;
     } */
+
+    /* make hover effect invisible
     .scroll-button:hover {
         background-color: transparent;
-    }
+    } */
+
     .prev:hover, .next:hover {
         background-color: transparent;
     }
