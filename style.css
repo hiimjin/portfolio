@@ -460,6 +460,7 @@ body, html {
     }
     .header-profile-image {
         display: block;
+        filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.2));
     }
     .profile-image {
         display: none;
