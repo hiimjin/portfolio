@@ -25,8 +25,7 @@ const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 const cardData = [
     {
         title: "This Website",
-        role: "Designer and Developer",
-        description: "Detailed description about this website project...",
+        description: "I built this website using HTML, CSS, and JavaScript. I just need to feel some more sentences to check if it looks nice -- so please ignore further text and move on to the next slides.",
         images: [
             "images/cards/web.png",
             "images/cards/vineyard.png",
@@ -35,19 +34,19 @@ const cardData = [
     },
     {
         title: "Vineyard App UI/UX",
-        role: "iOS Club, Designer and Developer",
         description: "Information about the Vineyard App UI/UX project...",
-        images: ["images/cards/vineyard.png"]
+        images: [
+            "images/cards/vineyard.png",
+            "images/cards/vineyard.png"
+        ]
     },
     {
         title: "Three App UI/UX",
-        role: "iOS Club, Developer",
         description: "Information about the Three App UI/UX project...",
         images: ["images/cards/three.png"]
     },
     {
         title: "Music and Coding",
-        role: "TAP, Student Researcher",
         description: "An in-depth look into the intersection of music and coding, exploring innovative ways to teach programming through musical concepts.",
         images: [
             "images/musicode1.png",
@@ -57,13 +56,11 @@ const cardData = [
     },
     {
         title: "IEQ and ML Framework",
-        role: "WELab, Student Researcher",
         description: "Exploring Indoor Environmental Quality (IEQ) using Machine Learning frameworks to enhance sustainability.",
         images: ["images/filler.png"]
     },
     {
         title: "Design Template",
-        role: "KSEA, Promotional Director",
         description: "Created promotional design templates for KSEA using Illustrator.",
         images: ["images/cards/ksea.png"]
     }
@@ -104,7 +101,6 @@ cards.forEach((card, index) => {
         // Populate the modal content
         modalBody.innerHTML = `
             <h2>${data.title}</h2>
-            <h3>${data.role}</h3>
             ${sliderImages}
             <p>${data.description}</p>
         `;
