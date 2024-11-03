@@ -136,6 +136,7 @@ body, html {
     cursor: pointer;
     border-radius: 50%;
     z-index: 1;
+    transition: 0.2s;
 }
 
 .left-button {
@@ -149,6 +150,7 @@ body, html {
 .scroll-button:hover {
     /* background-color: rgba(0, 0, 0, 0.3); */
     background-color: transparent;
+    color: rgba(76, 68, 96, 0.7);
 }
 
 /* Cards */
@@ -312,24 +314,25 @@ body, html {
 }
 
 .modal-active {
-    background-color: rgb(219, 216, 216); /* or any shade of gray you prefer */
+    background-color: rgb(200, 200, 200);
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: rgba(244, 242, 236, 0.75);
+    background-color: rgb(249, 246, 239, 0.85);
     margin: 12vh auto; /* Center the modal */
     padding: 20px;
     border-radius: 14px;
     width: 90%;
     max-width: 700px;
     position: relative;
-    filter: drop-shadow(1px 1px 5px rgba(82, 82, 82, 0.65));
+    -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
+    box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
 }
 
 /* Close Button */
 .modal-close {
-    color: #ffffff;
+    color: #7c7c7c;
     position: absolute;
     top: 0px;
     right: 22px;
@@ -337,12 +340,11 @@ body, html {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
 }
 
 .modal-close:hover,
 .modal-close:focus {
-    color: #4a4a4a;
+    color: #000000;
 }
 
 /* Modal Body Content */
@@ -367,8 +369,7 @@ body, html {
     font-size: 18px;
     line-height: 1.5;
     margin-top: -20px;
-    color: #ffffff;
-    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
+    color: #7c7c7c;
 }
 
 .modal-body img {
@@ -406,12 +407,12 @@ body, html {
     width: auto;
     margin-top: -50px;
     padding: 16px;
-    color: #f9f6ef;
+    color: #7c7c7c;
     font-weight: bold;
     font-size: 24px;
     transition: 0.2s;
     user-select: none;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
 .next {
@@ -421,7 +422,7 @@ body, html {
 
 .prev:hover, .next:hover {
     background-color: transparent;
-    color: #4a4a4a;
+    color: #000000;
 }
 
 /* Footer */

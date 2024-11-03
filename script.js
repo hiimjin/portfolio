@@ -25,9 +25,9 @@ const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 const cardData = [
     {
         title: " ",
-        description: "I built this website using HTML, CSS, and JavaScript. I just need to feel some more sentences to check if it looks nice -- so please ignore further text and move on to the next slides.",
+        description: "I built this website using HTML, CSS, and JavaScript. I just need to feel some more sentences to check if it looks nice.",
         images: [
-            "images/cards/web.png",
+            "images/slides/three/three_1.png",
             "images/cards/vineyard.png",
             "images/cards/web.png"
         ]
@@ -36,7 +36,7 @@ const cardData = [
         title: " ",
         description: "Information about the Vineyard App UI/UX project...",
         images: [
-            "images/cards/vineyard.png",
+            "images/slides/three/three_1.png",
             "images/cards/vineyard.png"
         ]
     },
