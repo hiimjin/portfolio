@@ -304,8 +304,8 @@ body, html {
     z-index: 10; /* Ensure it sits on top */
     left: 0;
     top: 0;
+    height: 100vh; /* Set to viewport height */
     width: 100%;
-    height: 150%; /* comeback 100% */
     overflow-y: auto; /* Enable scroll if needed */
     backdrop-filter: blur(7px); /* Adds the blur effect */
     -webkit-backdrop-filter: blur(7px); /* For Safari support */
