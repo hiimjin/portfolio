@@ -24,7 +24,7 @@ const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 // Data for each card
 const cardData = [
     {
-        title: "This Website",
+        title: " ",
         description: "I built this website using HTML, CSS, and JavaScript. I just need to feel some more sentences to check if it looks nice -- so please ignore further text and move on to the next slides.",
         images: [
             "images/cards/web.png",
@@ -33,7 +33,7 @@ const cardData = [
         ]
     },
     {
-        title: "Vineyard App UI/UX",
+        title: " ",
         description: "Information about the Vineyard App UI/UX project...",
         images: [
             "images/cards/vineyard.png",
@@ -41,12 +41,12 @@ const cardData = [
         ]
     },
     {
-        title: "Three App UI/UX",
+        title: " ",
         description: "Information about the Three App UI/UX project...",
         images: ["images/cards/three.png"]
     },
     {
-        title: "Music and Coding",
+        title: " ",
         description: "An in-depth look into the intersection of music and coding, exploring innovative ways to teach programming through musical concepts.",
         images: [
             "images/musicode1.png",
@@ -55,12 +55,12 @@ const cardData = [
         ]
     },
     {
-        title: "IEQ and ML Framework",
+        title: " ",
         description: "Exploring Indoor Environmental Quality (IEQ) using Machine Learning frameworks to enhance sustainability.",
         images: ["images/filler.png"]
     },
     {
-        title: "Design Template",
+        title: " ",
         description: "Created promotional design templates for KSEA using Illustrator.",
         images: ["images/cards/ksea.png"]
     }

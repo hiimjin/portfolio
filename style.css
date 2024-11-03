@@ -307,50 +307,53 @@ body, html {
     width: 100%;
     height: 150%; /* comeback 100% */
     overflow-y: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.55); /* Semi-transparent dark background */
+    backdrop-filter: blur(6px); /* Adds the blur effect */
+    -webkit-backdrop-filter: blur(6px); /* For Safari support */
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: transparent;
+    background-color: rgba(152, 150, 145, 0.7);
     margin: 5% auto; /* Center the modal */
-    padding: 15px;
+    padding: 20px;
     border-radius: 14px;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     margin-top: 100px;
     position: relative;
-
+    filter: drop-shadow(1px 1px 7px rgba(56, 56, 56, 0.4));
 }
 
 /* Close Button */
 .modal-close {
     color: #ffffff;
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 0px;
+    right: 22px;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-    filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 0.3));
+    transition: 0.2s;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
 }
 
-/* .modal-close:hover,
+.modal-close:hover,
 .modal-close:focus {
-    color: #000;
-} */
+    color: #4a4a4a;
+}
 
 /* Modal Body Content */
 .modal-body {
-    margin-top: -10px;
+    margin-top: 35px;
+    margin-bottom: -15px;
 }
 
-.modal-body h2 {
+/* .modal-body h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #ffffff;
-    filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 0.3));
-}
+} */
 
 /* .modal-body h3 {
     font-size: 18px;
@@ -363,7 +366,7 @@ body, html {
     line-height: 1.5;
     margin-top: -20px;
     color: #ffffff;
-    filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
 }
 
 .modal-body img {
@@ -406,6 +409,7 @@ body, html {
     font-size: 24px;
     transition: 0.2s;
     user-select: none;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
 }
 
 .next {
@@ -415,6 +419,7 @@ body, html {
 
 .prev:hover, .next:hover {
     background-color: transparent;
+    color: #4a4a4a;
 }
 
 /* Footer */
