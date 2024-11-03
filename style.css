@@ -307,8 +307,8 @@ body, html {
     height: 100vh; /* Set to viewport height so users can scroll */
     width: 100%;
     overflow-y: auto; /* Enable scroll if needed */
-    backdrop-filter: blur(7px); /* Adds the blur effect */
-    -webkit-backdrop-filter: blur(7px); /* For Safari support */
+    backdrop-filter: blur(6px); /* Adds the blur effect */
+    -webkit-backdrop-filter: blur(6px); /* For Safari support */
 }
 
 .modal-active {
