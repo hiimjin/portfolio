@@ -312,7 +312,7 @@ body, html {
 }
 
 .modal-active {
-    background-color: rgb(227, 225, 225); /* or any shade of gray you prefer */
+    background-color: rgb(219, 216, 216); /* or any shade of gray you prefer */
 }
 
 /* Modal Content */
@@ -376,7 +376,6 @@ body, html {
     height: auto;
     margin-bottom: 15px;
     border-radius: 14px;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
 }
 
 /* Slider Styles */
