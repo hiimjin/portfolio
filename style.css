@@ -385,7 +385,6 @@ body, html {
     position: relative;
     max-width: 100%;
     margin: 0 auto 20px;
-    overflow: hidden;
 }
 
 /* Slides */
@@ -546,7 +545,7 @@ body, html {
         padding: 10px 15px;
         margin-top: -30px;
         background-color: rgb(249, 246, 239, 0.85);
-        border-radius: 14px;
+        border-radius: 15px;
     }
     .site-footer {
         padding: 17px 0;
@@ -558,17 +557,14 @@ body, html {
         background-color: transparent;
         -webkit-box-shadow: 0;
         box-shadow: none;
+        overflow: visible;
     }
     .modal-close {
         color: #ffffff;
-        position: absolute;
         top: 100%;
         right: 50%;
         font-size: 40px;
         filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
-    }
-    .prev, .next {
-        color: #ffffff;
     }
     .modal-body img {
         -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
