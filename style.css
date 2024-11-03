@@ -549,14 +549,26 @@ body, html {
     }
     .modal-content {
         margin-top: 130px;
-        padding: 0px;
+        padding: 05px;
+        width: 95%;
         background-color: transparent;
         -webkit-box-shadow: 0;
         box-shadow: none;
     }
+    .modal-close {
+        color: #ffffff;
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        font-size: 40px;
+        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+    }
+    .prev, .next {
+        color: #ffffff;
+    }
     .modal-body img {
         -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
-        box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
+        box-shadow: 2px 0px 12px rgba(11, 11, 11, 0.2);
     }
     .modal-body p {
         padding: 10px 15px;
