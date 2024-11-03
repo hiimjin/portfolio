@@ -317,13 +317,12 @@ body, html {
 
 /* Modal Content */
 .modal-content {
-    background-color: rgba(224, 220, 215, 0.68);
+    background-color: rgba(224, 220, 215, 0.7);
     margin: 5% auto; /* Center the modal */
     padding: 20px;
     border-radius: 14px;
     width: 90%;
     max-width: 700px;
-    margin-top: 100px;
     position: relative;
     filter: drop-shadow(1px 1px 5px rgba(37, 37, 37, 0.6));
 }
