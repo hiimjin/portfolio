@@ -317,7 +317,7 @@ body, html {
 
 /* Modal Content */
 .modal-content {
-    background-color: rgba(141, 139, 135, 0.85);
+    background-color: rgba(162, 161, 159, 0.7);
     margin: 5% auto; /* Center the modal */
     padding: 20px;
     border-radius: 14px;
