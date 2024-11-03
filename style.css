@@ -304,7 +304,7 @@ body, html {
     z-index: 10; /* Ensure it sits on top */
     left: 0;
     top: 0;
-    height: 100vh; /* Set to viewport height */
+    height: 100vh; /* Set to viewport height so users can scroll */
     width: 100%;
     overflow-y: auto; /* Enable scroll if needed */
     backdrop-filter: blur(7px); /* Adds the blur effect */
@@ -317,7 +317,7 @@ body, html {
 
 /* Modal Content */
 .modal-content {
-    background-color: rgba(162, 161, 159, 0.7);
+    background-color: rgba(162, 161, 159, 0.63);
     margin: 5% auto; /* Center the modal */
     padding: 20px;
     border-radius: 14px;
