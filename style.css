@@ -317,7 +317,7 @@ body, html {
 
 /* Modal Content */
 .modal-content {
-    background-color: rgba(224, 220, 215, 0.7);
+    background-color: rgba(238, 236, 232, 0.75);
     margin: 12vh auto; /* Center the modal */
     padding: 20px;
     border-radius: 14px;
@@ -368,7 +368,7 @@ body, html {
     line-height: 1.5;
     margin-top: -20px;
     color: #ffffff;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.4));
 }
 
 .modal-body img {
