@@ -310,7 +310,6 @@ body, html {
     background-color: rgba(0, 0, 0, 0.55); /* Semi-transparent dark background */
     backdrop-filter: blur(6px); /* Adds the blur effect */
     -webkit-backdrop-filter: blur(6px); /* For Safari support */
-    overflow: visible;
 }
 
 /* Modal Content */
@@ -495,7 +494,7 @@ body, html {
     }
 
     .rf-cards-scroller-itemview {
-        width: 290px;
+        width: 280px;
     }
     .rf-ccard-overlay .first-txt {
         font-size: 22px;
@@ -541,6 +540,9 @@ body, html {
     }
     .modal-body p {
         font-size: 16px;
+    }
+    .site-footer {
+        padding: 20px 0;
     }
 }
 
