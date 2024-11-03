@@ -307,14 +307,17 @@ body, html {
     width: 100%;
     height: 150%; /* comeback 100% */
     overflow-y: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.55); /* Semi-transparent dark background */
     backdrop-filter: blur(6px); /* Adds the blur effect */
     -webkit-backdrop-filter: blur(6px); /* For Safari support */
 }
 
+.modal-active {
+    background-color: rgb(107, 107, 107); /* or any shade of gray you prefer */
+}
+
 /* Modal Content */
 .modal-content {
-    background-color: rgba(152, 150, 145, 0.7);
+    background-color: rgba(141, 139, 135, 0.85);
     margin: 5% auto; /* Center the modal */
     padding: 20px;
     border-radius: 14px;
@@ -424,7 +427,7 @@ body, html {
 
 /* Footer */
 .site-footer {
-    background-color: #f9f6ef; /* Matches the body background color */
+    background-color: inherit; /* Matches the body background color */
     padding: 40px 0;
     text-align: center; /* Center the content */
 }
@@ -514,7 +517,7 @@ body, html {
     }
 
     body, html {
-        margin-top: 2.5vw;
+        margin-top: 1.5vw;
     }
 
     .scroll-button {
@@ -543,6 +546,9 @@ body, html {
     }
     .site-footer {
         padding: 20px 0;
+    }
+    .modal-content {
+        margin-top: 160px;
     }
 }
 

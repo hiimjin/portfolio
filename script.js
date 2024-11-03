@@ -74,6 +74,9 @@ cards.forEach((card, index) => {
         // Prevent background scrolling
         document.body.style.overflow = 'hidden';
 
+        document.body.classList.add('modal-active');
+        document.documentElement.classList.add('modal-active');
+
         // Get the data for the clicked card
         const data = cardData[index];
 
@@ -116,6 +119,8 @@ cards.forEach((card, index) => {
 modalClose.addEventListener('click', () => {
     modalOverlay.style.display = 'none';
     document.body.style.overflow = 'auto'; // Enable scrolling
+    document.body.classList.remove('modal-active');
+    document.documentElement.classList.remove('modal-active');
 });
 
 // Close the modal when clicking outside of the modal content
@@ -123,6 +128,8 @@ window.addEventListener('click', (event) => {
     if (event.target == modalOverlay) {
         modalOverlay.style.display = 'none';
         document.body.style.overflow = 'auto'; // Enable scrolling
+        document.body.classList.remove('modal-active');
+        document.documentElement.classList.remove('modal-active');
     }
 });
 
