@@ -319,6 +319,7 @@ body, html {
 
 /* Modal Content */
 .modal-content {
+    position: relative;
     background-color: rgb(249, 246, 239, 0.85);
     margin: 12vh auto; /* Center the modal */
     padding: 20px;
@@ -398,7 +399,8 @@ body, html {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.modal-content .prev,
+.modal-content .next {
     cursor: pointer;
     position: absolute;
     top: 55%;
@@ -414,12 +416,17 @@ body, html {
     filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
-.next {
-    right: 0;
+.modal-content .prev {
+    left: 2%;
     border-radius: 50%;
 }
 
-.prev:hover, .next:hover {
+.modal-content .next {
+    right: 2%;
+    border-radius: 50%;
+}
+
+.modal-content .prev:hover, .modal-content .next:hover {
     background-color: transparent;
     color: #000000;
 }
@@ -548,9 +555,10 @@ body, html {
         border-radius: 15px;
     }
     .site-footer {
-        padding: 17px 0;
+        padding: 15px 0;
     }
     .modal-content {
+        position: relative;
         margin-top: 130px;
         padding: 05px;
         width: 95%;
@@ -560,11 +568,26 @@ body, html {
         overflow: visible;
     }
     .modal-close {
-        color: #ffffff;
-        top: 100%;
-        right: 50%;
-        font-size: 40px;
+        position: absolute;
+        color: #f9f6ef;
+        text-align: center;
+        top: 102%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 42px;
         filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+    }
+    .modal-content .prev,
+    .modal-content .next {
+        position: absolute;
+        color: #f9f6ef;
+        top: 115%;
+    }
+    .modal-content .prev {
+        left: 30%;
+    }
+    .modal-content .next {
+        right: 30%
     }
     .modal-body img {
         -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);

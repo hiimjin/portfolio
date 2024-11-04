@@ -92,9 +92,9 @@ cards.forEach((card, index) => {
             sliderImages = `
                 <div class="slider">
                     ${sliderImages}
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
                 </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
             `;
         } else {
             // Single image
@@ -138,8 +138,8 @@ function initSlider() {
     let slideIndex = 0;
     showSlides(slideIndex);
 
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
+    const prev = document.querySelector('.modal-content .prev');
+    const next = document.querySelector('.modal-content .next');
 
     prev.addEventListener('click', () => {
         showSlides(--slideIndex);
