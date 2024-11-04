@@ -584,10 +584,10 @@ body, html {
         top: 115%;
     }
     .modal-content .prev {
-        left: 30%;
+        left: 20%;
     }
     .modal-content .next {
-        right: 30%
+        right: 20%
     }
     .modal-body img {
         -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
