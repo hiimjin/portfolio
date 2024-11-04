@@ -573,6 +573,9 @@ body, html {
     .modal-content .next {
         right: 20%
     }
+    .modal-content .prev:hover, .modal-content .next:hover {
+        color: #f9f6ef;
+    }
 }
 
 @media screen and (max-width: 400px) {
