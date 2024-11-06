@@ -25,15 +25,6 @@ const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 const cardData = [
     {
         title: " ",
-        description: "I built this website using HTML, CSS, and JavaScript. I just need to feel some more sentences to check if it looks nice.",
-        images: [
-            "images/slides/three/three_1.png",
-            "images/cards/vineyard.png",
-            "images/cards/web.png"
-        ]
-    },
-    {
-        title: " ",
         description: "Information about the Vineyard App UI/UX project...",
         images: [
             "images/slides/three/three_1.png",
@@ -41,9 +32,10 @@ const cardData = [
         ]
     },
     {
+        // three
         title: " ",
-        description: "Information about the Three App UI/UX project...",
-        images: ["images/cards/three.png"]
+        description: "Three is an undersaturated, low-stress social media platform where users express their thoughts on a daily prompt using three words. Three was my first project as iOS club developer.",
+        images: ["images/slides/three/three_1.png"]
     },
     {
         title: " ",
@@ -63,6 +55,14 @@ const cardData = [
         title: " ",
         description: "Created promotional design templates for KSEA using Illustrator.",
         images: ["images/cards/ksea.png"]
+    },
+    {
+        title: " ",
+        description: "Information about the Vineyard App UI/UX project...",
+        images: [
+            "images/slides/three/three_1.png",
+            "images/cards/vineyard.png"
+        ]
     }
 ];
 
