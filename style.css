@@ -320,9 +320,9 @@ body, html {
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: rgb(249, 246, 239, 0.85);
+    background-color: rgb(249, 246, 239, 0.9);
     margin: 12vh auto; /* Center the modal */
-    padding: 20px;
+    padding: 0px;
     border-radius: 14px;
     width: 90%;
     max-width: 900px;
@@ -333,14 +333,16 @@ body, html {
 
 /* Close Button */
 .modal-close {
-    color: #7c7c7c;
+    color: #909090;
     position: absolute;
-    top: 0px;
+    top: 0%;
+    z-index: 12;
     right: 22px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
 .modal-close:hover,
@@ -355,9 +357,11 @@ body, html {
 }
 
 .modal-body p {
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
     color: #7c7c7c;
+    padding: 10px 15px;
+    margin-top: -23px;
 }
 
 .modal-body img {
@@ -381,7 +385,9 @@ body, html {
 
 .slide img {
     width: 100%;
-    border-radius: 14px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 14px 14px 0px 0px;
+    border-radius: 14px 14px 0px 0px;             
 }
 
 /* Next & previous buttons */
@@ -389,26 +395,26 @@ body, html {
 .modal-content .next {
     cursor: pointer;
     position: absolute;
-    top: 55%;
+    top: 50%;
     border-radius: 50%;
     width: auto;
     margin-top: -50px;
     padding: 16px;
-    color: #7c7c7c;
+    color: #909090;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     transition: 0.2s;
     user-select: none;
     filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
 .modal-content .prev {
-    left: 2%;
+    left: 0%;
     border-radius: 50%;
 }
 
 .modal-content .next {
-    right: 2%;
+    right: 0%;
     border-radius: 50%;
 }
 
@@ -433,6 +439,7 @@ body, html {
 .site-footer p {
     margin: 0;
     font-size: 16px;
+
 }
 
 @media screen and (max-width: 1025px) {
@@ -538,8 +545,6 @@ body, html {
     }
     .modal-body p {
         font-size: 14px;
-        padding: 10px 15px;
-        margin-top: -23px;
     }
     .site-footer {
         padding: 15px 0;
@@ -548,7 +553,6 @@ body, html {
         position: relative;
         width: 94%;
         padding: 0px;
-        background-color: rgb(249, 246, 239, 0.85);
         overflow: visible;
     }
     .modal-close {
@@ -576,6 +580,10 @@ body, html {
     }
     .modal-content .prev:hover, .modal-content .next:hover {
         color: #f9f6ef;
+    }
+    .site-footer p {
+        margin: 0;
+        font-size: 14px;
     }
 }
 
