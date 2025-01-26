@@ -25,10 +25,11 @@ const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 const cardData = [
     {
         title: " ",
-        description: "Information about the Vineyard App UI/UX project...",
+        description: "I joined Workplace Ecology Lab (WELab) fall 2024 to study indoor environment quality (IEQ) and its use of enhancing student comfort and productivity",
         images: [
-            "images/slides/three/three_1.png",
-            "images/cards/vineyard.png"
+            "images/slides/welab/welab2.png",
+            "images/slides/welab/welab3.png",
+            "images/slides/welab/welab4.png"
         ]
     },
     {
@@ -58,14 +59,6 @@ const cardData = [
         title: " ",
         description: "Created promotional design templates for KSEA using Illustrator.",
         images: ["images/cards/ksea.png"]
-    },
-    {
-        title: " ",
-        description: "Information about the Vineyard App UI/UX project...",
-        images: [
-            "images/slides/three/three_1.png",
-            "images/cards/vineyard.png"
-        ]
     }
 ];
 
