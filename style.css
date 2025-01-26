@@ -333,7 +333,7 @@ body, html {
 
 /* Close Button */
 .modal-close {
-    color: #909090;
+    color: rgb(177, 138, 255, 0.8);
     position: absolute;
     top: 0%;
     z-index: 12;
@@ -342,12 +342,12 @@ body, html {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+    /* filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); */
 }
 
 .modal-close:hover,
 .modal-close:focus {
-    color: #000000;
+    color: rgba(76, 68, 96, 0.8);
 }
 
 /* Modal Body Content */
@@ -400,12 +400,11 @@ body, html {
     width: auto;
     margin-top: -50px;
     padding: 16px;
-    color: #909090;
+    color: rgb(177, 138, 255, 0.8);
     font-weight: bold;
     font-size: 30px;
     transition: 0.2s;
     user-select: none;
-    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
 .modal-content .prev {
@@ -420,7 +419,7 @@ body, html {
 
 .modal-content .prev:hover, .modal-content .next:hover {
     background-color: transparent;
-    color: #000000;
+    color: rgba(76, 68, 96, 0.8);
 }
 
 /* Footer */
@@ -564,6 +563,9 @@ body, html {
         transform: translateX(-50%);
         font-size: 45px;
         filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+        /* area */
+        width: 45px;
+        height: 45px;
     }
     .modal-content .prev,
     .modal-content .next {
@@ -571,6 +573,7 @@ body, html {
         padding: 16px;
         color: #f9f6ef;
         top: 100%;
+        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
     }
     .modal-content .prev {
         left: 20%;
@@ -578,7 +581,8 @@ body, html {
     .modal-content .next {
         right: 20%
     }
-    .modal-content .prev:hover, .modal-content .next:hover {
+    .modal-content .prev:hover, .modal-content .next:hover,
+    .modal-close:hover {
         color: #f9f6ef;
     }
     .site-footer p {
