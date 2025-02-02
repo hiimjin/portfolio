@@ -67,7 +67,7 @@ body, html {
 .content-wrapper {
     display: flex;
     align-items: center;
-    gap: 375px; /* space between the title and navigation */
+    gap: 435px; /* space between the title and navigation */
 }
 
 .title {
@@ -84,7 +84,7 @@ body, html {
 }
 
 .nav a {
-    margin-right: 15px;
+    margin-right: 5px;
     text-decoration: none;
     color: #7c7c7c;
 }
@@ -299,18 +299,17 @@ body, html {
 }
 
 /* Modal Overlay Styles */
-/* Added styles for the modal overlay and its content */
 .modal-overlay {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    z-index: 10; /* Ensure it sits on top */
+    z-index: 10;
     left: 0;
     top: 0;
-    height: 100%; /* Set to viewport height so users can scroll */
+    height: 100%;
     width: 100%;
     overflow-y: auto; /* Enable scroll if needed */
-    backdrop-filter: blur(5px); /* Adds the blur effect */
-    -webkit-backdrop-filter: blur(5px); /* For Safari support */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .modal-active {
@@ -326,7 +325,6 @@ body, html {
     border-radius: 14px;
     width: 90%;
     max-width: 900px;
-    position: relative;
     -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
     box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
 }

@@ -25,13 +25,10 @@ const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 const cardData = [
     {
         title: " ",
-        description: "I joined Workplace Ecology Lab (WELab) fall 2024 to study indoor environment quality (IEQ) and its use of enhancing student comfort and productivity",
+        description: "January 2024 ~ April 2024, Georgia Tech iOS club",
         images: [
-            "images/slides/welab/welab1.png",
+            "images/slides/three/three3.png",
             "images/slides/welab/welab2.png",
-            "images/slides/welab/welab3.png",
-            "images/slides/welab/welab4.png",
-            "images/slides/welab/welab5.png"
         ]
     },
     {
