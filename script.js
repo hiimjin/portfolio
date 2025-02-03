@@ -25,7 +25,7 @@ const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 const cardData = [
     {
         title: " ",
-        description: "January 2024 ~ April 2024, Georgia Tech iOS club",
+        description: "",
         images: [
             "images/slides/three/three2.png",
             "images/slides/three/three3.png",
