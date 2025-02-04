@@ -1,3 +1,4 @@
+// Horizontal scroll logic
 const scroller = document.querySelector('.rf-cards-scroller-crop');
 const scrollLeftBtn = document.getElementById('scroll-left');
 const scrollRightBtn = document.getElementById('scroll-right');
@@ -18,18 +19,19 @@ scrollRightBtn.addEventListener('click', () => {
 const modalOverlay = document.getElementById('modal-overlay');
 const modalClose = document.getElementById('modal-close');
 const modalBody = document.getElementById('modal-body');
-
 const cards = document.querySelectorAll('.rf-cards-scroller-itemview');
 
 // Data for each card
 const cardData = [
     {
         title: " ",
-        description: "",
+        description: " ",
         images: [
-            "images/slides/three/three2.png",
-            "images/slides/three/three3.png",
+            "images/slides/welab/welab1.png",
             "images/slides/welab/welab2.png",
+            "images/slides/welab/welab3.png",
+            "images/slides/welab/welab4.png",
+            "images/slides/welab/welab5.png"
         ]
     },
     {
@@ -65,11 +67,11 @@ const cardData = [
 // Add click event listeners to each card
 cards.forEach((card, index) => {
     card.addEventListener('click', () => {
-        // Display the modal
-        modalOverlay.style.display = 'block';
+        // Show the modal by adding the 'show' class
+        modalOverlay.classList.add('show');
+
         // Prevent background scrolling
         document.body.style.overflow = 'hidden';
-
         document.body.classList.add('modal-active');
         document.documentElement.classList.add('modal-active');
 
@@ -84,6 +86,7 @@ cards.forEach((card, index) => {
                     <img src="${img}" alt="${data.title} Image ${idx + 1}" />
                 </div>
             `).join('');
+
             // Include slider controls
             sliderImages = `
                 <div class="slider">
@@ -113,17 +116,17 @@ cards.forEach((card, index) => {
 
 // Close the modal when the close button is clicked
 modalClose.addEventListener('click', () => {
-    modalOverlay.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Enable scrolling
+    modalOverlay.classList.remove('show');
+    document.body.style.overflow = 'auto';
     document.body.classList.remove('modal-active');
     document.documentElement.classList.remove('modal-active');
 });
 
 // Close the modal when clicking outside of the modal content
 window.addEventListener('click', (event) => {
-    if (event.target == modalOverlay) {
-        modalOverlay.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Enable scrolling
+    if (event.target === modalOverlay) {
+        modalOverlay.classList.remove('show');
+        document.body.style.overflow = 'auto';
         document.body.classList.remove('modal-active');
         document.documentElement.classList.remove('modal-active');
     }
