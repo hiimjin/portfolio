@@ -64,6 +64,13 @@ const cardData = [
     }
 ];
 
+document.addEventListener('contextmenu', function (event) {
+    // If it’s over an image, block the context menu
+    if (event.target.tagName.toLowerCase() === 'img') {
+        event.preventDefault();
+    }
+}, false);
+
 // Add click event listeners to each card
 cards.forEach((card, index) => {
     card.addEventListener('click', () => {
@@ -132,11 +139,35 @@ window.addEventListener('click', (event) => {
     }
 });
 
-// Slider functionality
+// UPDATED initSlider() WITH DOTS:
 function initSlider() {
     let slideIndex = 0;
+
+    const slider = document.querySelector('.slider');
+    const slides = slider.querySelectorAll('.slide');
+
+    // Create a container for the dots
+    const dotsContainer = document.createElement('div');
+    dotsContainer.classList.add('dots-container');
+
+    // For each slide, create a dot
+    slides.forEach((_, i) => {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active'); // first is active
+        dot.addEventListener('click', () => {
+            showSlides(slideIndex = i);
+        });
+        dotsContainer.appendChild(dot);
+    });
+
+    // Insert the dots container BELOW the slider
+    slider.insertAdjacentElement('afterend', dotsContainer);
+
+    // Show the first slide
     showSlides(slideIndex);
 
+    // Set up next/prev
     const prev = document.querySelector('.modal-content .prev');
     const next = document.querySelector('.modal-content .next');
 
@@ -149,10 +180,22 @@ function initSlider() {
     });
 
     function showSlides(n) {
-        const slides = document.querySelectorAll('.slide');
-        if (n >= slides.length) { slideIndex = 0; }
-        if (n < 0) { slideIndex = slides.length - 1; }
-        slides.forEach(slide => slide.style.display = 'none');
+        if (n >= slides.length) {
+            slideIndex = 0;
+        }
+        if (n < 0) {
+            slideIndex = slides.length - 1;
+        }
+
+        // Hide all slides
+        slides.forEach(slide => (slide.style.display = 'none'));
+        // Deactivate all dots
+        const allDots = dotsContainer.querySelectorAll('.dot');
+        allDots.forEach(dot => dot.classList.remove('active'));
+
+        // Show the current slide
         slides[slideIndex].style.display = 'block';
+        // Highlight the current dot
+        allDots[slideIndex].classList.add('active');
     }
 }

@@ -251,6 +251,9 @@ body, html {
     -webkit-appearance: none;
     -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
     box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
+
+    -webkit-user-drag: none; 
+    user-drag: none;
 }
 
 /* Text overlay */
@@ -314,7 +317,7 @@ body, html {
 /* Modal Content container starts slightly above and transparent */
 .modal-content {
     position: relative;
-    background-color: rgba(249, 246, 239, 0.9);
+    background-color: rgba(249, 246, 239, 0.7);
     margin: 12vh auto; /* Center the modal */
     padding: 0px;
     border-radius: 14px;
@@ -370,6 +373,9 @@ body, html {
     width: 100%;
     height: auto;
     border-radius: 14px;
+
+    -webkit-user-drag: none; 
+    user-drag: none;
 }
 
 /* Slider Styles */
@@ -418,6 +424,27 @@ body, html {
 .modal-content .prev:hover, .modal-content .next:hover {
     background-color: transparent;
     color: rgba(76, 68, 96, 0.8);
+}
+
+/* dot container */
+.dots-container {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 8px;
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: #c8c8c8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #696969;
 }
 
 /* Footer */
@@ -565,6 +592,17 @@ body, html {
     .modal-content .prev:hover, .modal-content .next:hover,
     .modal-close:hover {
         color: #f9f6ef;
+    }
+    /* dot container */
+    .dots-container {
+        margin-top: -28px;
+        margin-bottom: 5px;
+    }
+
+    /* Individual dot */
+    .dot {
+        width: 7px;
+        height: 7px;
     }
     .site-footer p {
         margin: 0;
