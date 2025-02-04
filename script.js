@@ -37,10 +37,10 @@ const cardData = [
     {
         // three
         title: " ",
-        description: "Three is an undersaturated, low-stress social media platform where users express their thoughts on a daily prompt using three words. Three was my first project as iOS club developer.",
+        description: "",
         images: [
-            "images/slides/three/three_1.png",
-            "images/slides/three/three_1.png"
+            "images/slides/three/three2.png",
+            "images/slides/three/three3.png"
         ]
     },
     {
