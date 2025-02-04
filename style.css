@@ -317,7 +317,7 @@ body, html {
 /* Modal Content container starts slightly above and transparent */
 .modal-content {
     position: relative;
-    background-color: rgba(249, 246, 239, 0.7);
+    background-color: rgba(249, 246, 239, 0.8);
     margin: 12vh auto; /* Center the modal */
     padding: 0px;
     border-radius: 14px;
@@ -429,7 +429,7 @@ body, html {
 /* dot container */
 .dots-container {
     text-align: center;
-    margin-top: -20px;
+    margin-top: -23px;
     margin-bottom: 8px;
 }
 .dot {

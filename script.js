@@ -39,7 +39,7 @@ const cardData = [
         title: " ",
         description: "",
         images: [
-            "images/slides/three/three2.png",
+            "images/slides/three/three1.png",
             "images/slides/three/three3.png"
         ]
     },
