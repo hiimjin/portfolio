@@ -644,17 +644,14 @@ body, html {
         justify-content: right;
         gap: 0px;
         padding-left: 20px;
+        margin-left: 0px;
     }
     .intro-text {
         margin-left: 0px;
         max-width: 100%;
-        align-items: right;
-        justify-content: right;
     }
     .intro-text h2 {
         margin-left: 0px;
-        align-items: right;
-        justify-content: right;
     }
     .as-l-container.rs-cards-shelf-header {
         width: 100%;
