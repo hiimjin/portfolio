@@ -83,7 +83,10 @@ body, html {
 .content-wrapper {
     display: flex;
     align-items: center;
-    gap: 600px; /* space between the title and navigation */
+    justify-content: space-between;
+    width: 777px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .title {
@@ -485,22 +488,18 @@ body, html {
         background-position: center 32px;
     }
     .content-wrapper {
-        gap: 200px;
-        max-width: 150%;
-
+        width: 400px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px; 
+        gap: 0px;
     }
     .title {
         font-size: 20px;
-        margin-left: -190px;
-
-        max-width: 150%;
-
+        margin-left: 10px; 
     }
     .nav a {
         font-size: 16px;
-
-        max-width: 150%;
-
     }
     .header-profile-image {
         display: block;
@@ -642,5 +641,34 @@ body, html {
     }
     .title {
         margin-left: 10px; 
+    }
+    .intro-section {
+        align-items: right;
+        justify-content: right;
+        gap: 0px;
+        padding-left: 20px;
+    }
+    .intro-text {
+        margin-left: 0px;
+        max-width: 100%;
+    }
+    .intro-text h2 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .as-l-container.rs-cards-shelf-header {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .rs-cards-shelf-mainheader {
+        padding-left: 0;
+        padding-bottom: 4px;
+        text-align: left;
+        margin-right: 0px;
+        margin-left: -7px;
+    }
+    .rs-cards-shelf {
+        margin-left: 10px;
     }
 }
