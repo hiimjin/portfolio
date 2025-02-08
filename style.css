@@ -473,8 +473,8 @@ body, html {
     .scroll-button { 
         display: none;
         
-        pointer-events: none;
-        -webkit-touch-callout: none;
+        /* pointer-events: none;
+        -webkit-touch-callout: none; */
     }
 }
 
