@@ -649,11 +649,11 @@ body, html {
         padding-left: 20px;
     }
     .intro-text {
-        margin-left: 0px;
+        margin-left: 0px !important;
         max-width: 100%;
     }
     .intro-text h2 {
-        margin-left: 0px;
+        margin-left: 0px !important;
     }
     .as-l-container.rs-cards-shelf-header {
         width: 100%;
