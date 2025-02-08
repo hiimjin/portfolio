@@ -5,10 +5,12 @@
 body, html {
     margin: 0;
     padding: 0;
-    margin-top: 1.5vw;
+    margin-top: 1vw;
     font-family: 'Source Sans 3', sans-serif;
-    background-color: #f9f6ef;
+    background-color: #f6f3eb;
 }
+
+.bold {font-weight: bold;}
 
 .gray { color: #7c7c7c; }
 
@@ -40,7 +42,7 @@ body, html {
     height: 150%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center 34px;
+    background-position: center 40px;
     z-index: -1;
     animation: wipe-left-right 0.3s forwards ease;
 
@@ -80,13 +82,13 @@ body, html {
 .content-wrapper {
     display: flex;
     align-items: center;
-    gap: 435px; /* space between the title and navigation */
+    gap: 600px; /* space between the title and navigation */
 }
 
 .title {
     margin: 0;
-    font-size: 23px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .header-profile-image {
@@ -97,7 +99,7 @@ body, html {
 }
 
 .nav a {
-    margin-right: 5px;
+    font-size: 20px;
     text-decoration: none;
     color: #7c7c7c;
 }
@@ -111,41 +113,43 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 200px;
+    padding-left: 20px;
 }
 
 .profile-image {
-    max-width: 160px;
+    max-width: 190px;
     width: 100%;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
     margin-top: -20px;
-    margin-left: 50px;
     -webkit-appearance: none;
     -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
     box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
 }
 
 .intro-text {
+    margin-left: -80px;
     max-width: 320px;
 }
 
 .intro-text h2 {
     margin-top: 0;
     margin-left: 0px;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
+    font-weight: bold;
 }
 
 .scroll-button {
     position: absolute;
-    top: -20%;
+    top: -25%;
     background-color: transparent;
     color: rgba(177, 138, 255, 0.6);
     border: none;
     padding: 10px;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     border-radius: 50%;
     z-index: 1;
@@ -153,11 +157,11 @@ body, html {
 }
 
 .left-button {
-    left: calc(50% + 218px);
+    left: calc(50% + 304px);
 }
 
 .right-button {
-    left: calc(50% + 250px);
+    left: calc(50% + 340px);
 }
 
 .scroll-button:hover {
@@ -168,7 +172,7 @@ body, html {
 /* Cards */
 .rs-cards-shelf {
     max-width: 100%;
-    margin-top: -30px; /* Brings it up */
+    margin-top: -40px; /* Brings it up */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,8 +189,8 @@ body, html {
     padding-left: 0;
     padding-bottom: 4px;
     text-align: left;
-    margin-right: 310px;
-    font-size: 23px;
+    margin-right: 450px;
+    font-size: 26px;
     font-weight: 500;
 }
 
@@ -222,7 +226,7 @@ body, html {
     justify-content: flex-start;
     flex-shrink: 0;
     margin-top: 3px;
-    padding-left: calc(50% - 290px);
+    padding-left: calc(50% - 375px);
     padding-right: 15px;
 }
 
@@ -450,7 +454,7 @@ body, html {
 /* Footer */
 .site-footer {
     background-color: inherit; /* Matches the body background color */
-    padding: 40px 0;
+    padding: 30px 0;
     text-align: center; /* Center the content */
 }
 
@@ -465,23 +469,38 @@ body, html {
     font-size: 16px;
 }
 
-/* Responsive Media Queries */
 @media screen and (max-width: 1025px) {
-    .scroll-button {
+    .scroll-button { 
+        display: none;
+        
         pointer-events: none;
         -webkit-touch-callout: none;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .highlight1, .highlight2, .highlight3 {
-        background-position: center 30px;
+@media screen and (max-width: 780px) {
+    .highlight1::before,
+    .highlight2::before,
+    .highlight3::before {
+        background-position: center 32px;
     }
     .content-wrapper {
-        gap: 190px;
+        gap: 200px;
+        max-width: 150%;
+
     }
     .title {
-        display: none;
+        font-size: 22px;
+        margin-left: -190px;
+
+        max-width: 150%;
+
+    }
+    .nav a {
+        font-size: 16px;
+
+        max-width: 150%;
+
     }
     .header-profile-image {
         display: block;
@@ -494,12 +513,12 @@ body, html {
         justify-content: center;
     }
     .intro-text h2 {
-        margin-left: 105px;
+        margin-left: 185px;
         margin-top: -5px;
         font-size: 26px;
     }
     .intro-text {
-        max-width: 100%;
+        max-width: 150%;
     }
     .nav {
         margin-left: auto;
@@ -626,5 +645,11 @@ body, html {
     }
     .rf-cards-scroller-crop {
         overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    body, html {
+        display: none;
     }
 }
