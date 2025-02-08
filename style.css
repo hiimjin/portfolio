@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-synthesis: none !important;
 }
 
 body, html {
@@ -89,8 +90,6 @@ body, html {
     margin: 0;
     font-size: 26px;
     font-weight: 500;
-
-    -webkit-font-smoothing: antialiased;
 }
 
 .header-profile-image {
@@ -141,8 +140,6 @@ body, html {
     margin-left: 0px;
     font-size: 32px;
     font-weight: 500;
-
-    -webkit-font-smoothing: antialiased;
 }
 
 .scroll-button {
@@ -195,8 +192,6 @@ body, html {
     margin-right: 450px;
     font-size: 26px;
     font-weight: 500;
-
-    -webkit-font-smoothing: antialiased;
 }
 
 .as-l-container {
@@ -357,8 +352,6 @@ body, html {
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s;
-
-    -webkit-font-smoothing: antialiased;
 }
 
 .modal-close:hover,
@@ -420,8 +413,6 @@ body, html {
     font-size: 30px;
     transition: 0.2s;
     user-select: none;
-
-    -webkit-font-smoothing: antialiased;
 }
 
 .modal-content .prev {
