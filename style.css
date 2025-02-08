@@ -508,9 +508,6 @@ body, html {
     .profile-image {
         display: none;
     }
-    .intro-section {
-        justify-content: center;
-    }
     .intro-text h2 {
         margin-left: 185px;
         margin-top: -5px;
@@ -649,11 +646,15 @@ body, html {
         padding-left: 20px;
     }
     .intro-text {
-        margin-left: 0px !important;
+        margin-left: 0px;
         max-width: 100%;
+        align-items: right;
+        justify-content: right;
     }
     .intro-text h2 {
-        margin-left: 0px !important;
+        margin-left: 0px;
+        align-items: right;
+        justify-content: right;
     }
     .as-l-container.rs-cards-shelf-header {
         width: 100%;
