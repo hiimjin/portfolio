@@ -88,7 +88,7 @@ body, html {
 .title {
     margin: 0;
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .header-profile-image {
@@ -139,7 +139,6 @@ body, html {
     margin-left: 0px;
     font-size: 32px;
     font-weight: 500;
-    font-weight: 600;
 }
 
 .scroll-button {
@@ -349,7 +348,7 @@ body, html {
     z-index: 12;
     right: 22px;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -409,7 +408,7 @@ body, html {
     margin-top: -50px;
     padding: 16px;
     color: rgba(177, 138, 255, 0.8);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
     transition: 0.2s;
     user-select: none;
