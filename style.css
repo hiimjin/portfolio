@@ -651,10 +651,12 @@ body, html {
     .intro-text {
         margin-left: 0px;
         max-width: 100%;
+        justify-content: right;
     }
     .intro-text h2 {
         margin-left: 0px;
         margin-right: 0px;
+        justify-content: right;
     }
     .as-l-container.rs-cards-shelf-header {
         width: 100%;
