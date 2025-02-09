@@ -491,7 +491,7 @@ body, html {
         width: 400px;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px; 
+        padding: 0 15px; 
         gap: 0px;
     }
     .title {
@@ -633,7 +633,7 @@ body, html {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 10px; 
+        padding: 0 15px; 
         gap: 0px;
     }
     .title {
@@ -663,6 +663,6 @@ body, html {
         padding-bottom: 4px;
         text-align: left;
         margin-right: 0px;
-        margin-left: -10px;
+        margin-left: -5px;
     }
 }
