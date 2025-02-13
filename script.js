@@ -41,7 +41,11 @@ const cardData = [
         images: [
             "images/slides/three/three1.png",
             "images/slides/three/three2.png",
-            "images/slides/three/three3.png"
+            "images/slides/three/three3.png",
+            "images/slides/three/three4.png",
+            "images/slides/three/three5.png",
+            "images/slides/three/three6.png",
+            "images/slides/three/three7.png"
         ]
     },
     {
