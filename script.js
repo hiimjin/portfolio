@@ -27,11 +27,12 @@ const cardData = [
         title: " ",
         description: " ",
         images: [
-            "images/slides/welab/welab1.png",
-            "images/slides/welab/welab2.png",
-            "images/slides/welab/welab3.png",
-            "images/slides/welab/welab4.png",
-            "images/slides/welab/welab5.png"
+            "images/slides/music/music1.png",
+            "images/slides/music/music2.png",
+            "images/slides/music/music3.png",
+            "images/slides/music/music4.png",
+            "images/slides/music/music5.png",
+            "images/slides/music/music6.png"
         ]
     },
     {
