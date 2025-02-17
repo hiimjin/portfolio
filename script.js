@@ -51,11 +51,9 @@ const cardData = [
     },
     {
         title: " ",
-        description: "An in-depth look into the intersection of music and coding, exploring innovative ways to teach programming through musical concepts.",
+        description: "",
         images: [
-            "images/musicode1.png",
-            "images/musicode2.png",
-            "images/musicode3.png"
+            "images/slides/ksea/ksea1.png"
         ]
     },
     {
