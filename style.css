@@ -513,7 +513,7 @@ body, html {
         display: none;
     }
     .main-content {
-        padding-top: 0px;
+        padding-top: 15px;
     }
     .intro-text h2 {
         margin-left: 185px;
