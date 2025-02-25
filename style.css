@@ -11,8 +11,6 @@ body, html {
     background-color: #f6f3eb;
 }
 
-.bold {font-weight: bold;}
-
 .gray { color: #7c7c7c; }
 
 /* --- Highlight Wipe Animations --- */
@@ -73,7 +71,7 @@ body, html {
 
 /* Header */
 .header {
-    height: 60px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,13 +90,13 @@ body, html {
 .title {
     margin: 0;
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .header-profile-image {
     display: none; /* hidden by default */
     width: 40px;
-    height: 40px;
+    height: 35px;
     border-radius: 50%;
 }
 
@@ -142,7 +140,7 @@ body, html {
     margin-top: 0;
     margin-left: 0px;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .scroll-button {
@@ -175,7 +173,7 @@ body, html {
 /* Cards */
 .rs-cards-shelf {
     max-width: 100%;
-    margin-top: -40px; /* Brings it up */
+    margin-top: -10px; /* Brings it up */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,7 +192,7 @@ body, html {
     text-align: left;
     margin-right: 450px;
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .as-l-container {

@@ -58,13 +58,21 @@ const cardData = [
     },
     {
         title: " ",
-        description: "Exploring Indoor Environmental Quality (IEQ) using Machine Learning frameworks to enhance sustainability.",
-        images: ["images/filler.png"]
+        description: "",
+        images: [
+            "images/slides/vineyard/vineyard1.png"
+        ]
     },
     {
         title: " ",
-        description: "Created promotional design templates for KSEA using Illustrator.",
-        images: ["images/cards/ksea.png"]
+        description: "",
+        images: [
+            "images/slides/welab/welab1.png",
+            "images/slides/welab/welab2.png",
+            "images/slides/welab/welab3.png",
+            "images/slides/welab/welab4.png",
+            "images/slides/welab/welab5.png"
+        ]
     }
 ];
 
