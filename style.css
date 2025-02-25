@@ -13,9 +13,8 @@ body, html {
 
 .gray { color: #7c7c7c; }
 
-/* --- Highlight Wipe Animations --- */
 .highlight1, .highlight2, .highlight3 {
-    position: relative;   /* for pseudo-element positioning */
+    position: relative;
     overflow: hidden;     /* hide the expanding highlight */
 }
 
@@ -29,7 +28,6 @@ body, html {
     z-index: 1;
 }
 
-/* Wipe (pseudo-elements) for each highlight class */
 .highlight1::before,
 .highlight2::before,
 .highlight3::before {
@@ -122,8 +120,37 @@ body, html {
     padding-left: 20px;
 }
 
+/* Wrap the profile image for positioning */
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 500px;
+}
+  
+  /* Style for the ABOUT ME button */
+.about-me-button {
+    position: absolute;
+    bottom: 7px;
+    left: -75px;
+    background-color: rgba(159, 195, 232, 0.8);
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    -webkit-box-shadow: 0px 0px 5px rgba(11, 11, 11, 0.2);
+    box-shadow: 0px 0px 5px rgba(11, 11, 11, 0.2);
+}
+  
+.about-me-button:hover {
+    background-color: rgba(95, 115, 136, 0.8);
+}  
+
 .profile-image {
-    max-width: 190px;
+    max-width: 200px;
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -514,6 +541,9 @@ body, html {
     }
     .main-content {
         padding-top: 15px;
+    }
+    .profile-image-container {
+        display: none;
     }
     .intro-text h2 {
         margin-left: 185px;
