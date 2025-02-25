@@ -71,10 +71,12 @@ body, html {
 
 /* Header */
 .header {
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: none;
 }
 
 /* wrapper to hold title and navigation */
@@ -109,6 +111,7 @@ body, html {
 /* Main */
 .main-content {
     padding: 20px 20px;
+    padding-top: 60px;
 }
 
 .intro-section {
@@ -485,6 +488,9 @@ body, html {
     .highlight3::before {
         background-position: center 32px;
     }
+    .header {
+        display: flex;
+    }
     .content-wrapper {
         width: 400px;
         max-width: 1200px;
@@ -502,12 +508,12 @@ body, html {
     .header-profile-image {
         display: block;
         filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
-
-        
-        display: none;
     }
     .profile-image {
         display: none;
+    }
+    .main-content {
+        padding-top: 0px;
     }
     .intro-text h2 {
         margin-left: 185px;
