@@ -143,6 +143,8 @@ body, html {
 
     -webkit-box-shadow: 0px 0px 5px rgba(11, 11, 11, 0.2);
     box-shadow: 0px 0px 5px rgba(11, 11, 11, 0.2);
+
+    display: none;
 }
   
 .about-me-button:hover {
