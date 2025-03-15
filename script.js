@@ -53,7 +53,11 @@ const cardData = [
         title: " ",
         description: "",
         images: [
-            "images/slides/ksea/ksea1.png"
+            "images/slides/ksea/ksea1.png",
+            "images/slides/ksea/ksea2.png",
+            "images/slides/ksea/ksea3.png",
+            "images/slides/ksea/ksea4.png",
+            "images/slides/ksea/ksea5.png"
         ]
     },
     {
