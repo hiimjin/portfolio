@@ -32,7 +32,8 @@ const cardData = [
             "images/slides/music/music3.png",
             "images/slides/music/music4.png",
             "images/slides/music/music5.png",
-            "images/slides/music/music6.png"
+            "images/slides/music/music6.png",
+            "images/slides/music/music7.png"
         ]
     },
     {
