@@ -66,7 +66,8 @@ const cardData = [
         title: " ",
         description: "",
         images: [
-            "images/slides/vineyard/vineyard1.png"
+            "images/slides/vineyard/vineyard1.png",
+            "images/slides/vineyard/vineyard2.png"
         ]
     },
     {

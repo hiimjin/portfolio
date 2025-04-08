@@ -340,6 +340,9 @@ body, html {
     overflow-y: auto; /* Enable scroll if needed */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+
+    background-color: rgba(0, 0, 0, 0.7);
+
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -376,7 +379,7 @@ body, html {
 
 /* Close Button */
 .modal-close {
-    color: rgba(177, 138, 255, 0.8);
+    color: rgba(225, 225, 225, 0.8);
     position: absolute;
     top: 0%;
     z-index: 12;
@@ -389,7 +392,7 @@ body, html {
 
 .modal-close:hover,
 .modal-close:focus {
-    color: rgba(76, 68, 96, 0.8);
+    color: rgba(69, 69, 69, 0.8);
 }
 
 /* Modal Body Content */
@@ -441,7 +444,7 @@ body, html {
     width: auto;
     margin-top: -50px;
     padding: 16px;
-    color: rgba(177, 138, 255, 0.8);
+    color: rgba(225, 225, 225, 0.8);
     font-weight: 500;
     font-size: 30px;
     transition: 0.2s;
