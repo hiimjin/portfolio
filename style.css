@@ -357,14 +357,12 @@ body, html {
 /* Modal Content container starts slightly above and transparent */
 .modal-content {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
     margin: 8vh auto; /* Center the modal */
     padding: 0px;
     border-radius: 14px;
     width: 95%;
     max-width: 75%;
-    -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
-    box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
 
     transform: translateY(-20px);  /* Slide from above */
     opacity: 0;                   /* Fully transparent initially */
@@ -431,7 +429,7 @@ body, html {
 
 .slide img {
     width: 100%;
-    border-radius: 14px 14px 0px 0px;
+    border-radius: 14px;
 }
 
 /* Next & previous buttons */
@@ -469,14 +467,14 @@ body, html {
 /* dot container */
 .dots-container {
     text-align: center;
-    margin-top: -23px;
+    margin-top: -15px;
     margin-bottom: 8px;
 }
 .dot {
     display: inline-block;
     width: 10px;
     height: 10px;
-    margin: 0 6px;
+    margin: 0 7px;
     background-color: #c8c8c8;
     border-radius: 50%;
     cursor: pointer;
@@ -652,7 +650,7 @@ body, html {
     }
     /* dot container */
     .dots-container {
-        margin-top: -29px;
+        margin-top: -26px;
         margin-bottom: 5px;
     }
 
