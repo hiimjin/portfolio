@@ -341,7 +341,7 @@ body, html {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 
     opacity: 0;
     pointer-events: none;
@@ -357,7 +357,7 @@ body, html {
 /* Modal Content container starts slightly above and transparent */
 .modal-content {
     position: relative;
-    background-color: rgba(249, 246, 239, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 8vh auto; /* Center the modal */
     padding: 0px;
     border-radius: 14px;
