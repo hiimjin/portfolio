@@ -73,18 +73,23 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    display: none;
 }
 
 /* wrapper to hold title and navigation */
 .content-wrapper {
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 40px;   */
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 777px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .title {
@@ -109,7 +114,7 @@ body, html {
 /* Main */
 .main-content {
     padding: 20px 20px;
-    padding-top: 60px;
+    padding-top: 15px;
 }
 
 .intro-section {
@@ -259,7 +264,7 @@ body, html {
     justify-content: flex-start;
     flex-shrink: 0;
     margin-top: 3px;
-    padding-left: calc(50% - 375px);
+    padding-left: 15px;
     padding-right: 15px;
 }
 
