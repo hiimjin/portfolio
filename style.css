@@ -315,7 +315,7 @@ body, html {
     object-fit: cover;
 
     transform: translateY(-25%);
-    transition: transform 0.6s ease;
+    transition: transform 0.7s ease;
 }
 
 .rf-ccard-img-full-wrapper:hover img {
@@ -339,7 +339,7 @@ body, html {
     /* Hide by default - move above the card */
     transform: translateY(-100%);
     opacity: 0;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.3));
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -348,17 +348,15 @@ body, html {
     margin-bottom: -24px;
     display: block;
     /* Slight delay for first text */
-    transition-delay: 0.05s;
+    transition-delay: 0.04s;
 }
 
 .rf-ccard-overlay .second-txt {
     font-size: 16px;
     display: block;
-    color: #999999;
-    -webkit-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: #efefef;
     /* Additional delay for second text */
-    transition-delay: 0.15s;
+    transition-delay: 0.14s;
 }
 
 /* Apply the animation when hovering over the card item */
