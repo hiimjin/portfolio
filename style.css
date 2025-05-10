@@ -8,7 +8,7 @@ body, html {
     padding: 0;
     margin-top: 1vw;
     font-family: 'Source Sans 3', sans-serif;
-    background-color: #f6f3eb;
+    background-color: #ffffff;
 }
 
 .gray { color: #7c7c7c; }
@@ -228,7 +228,7 @@ body, html {
     padding-bottom: 4px;
     text-align: left;
     margin-right: 450px;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
 }
 
@@ -270,8 +270,8 @@ body, html {
 
 .rf-cards-scroller-itemview {
     flex: 0 0 auto;
-    width: 320px;
-    max-width: 320px;
+    width: 340px;
+    max-width: 340px;
     height: auto;
     background-color: transparent;
     border-radius: 10px;
@@ -286,17 +286,41 @@ body, html {
     transform: scale(1.02);
 }
 
-.rf-ccard-img-full-wrapper img {
+.rf-ccard-img-full-wrapper {
     width: 100%;
-    height: auto;
-    border-radius: 14px;
+    /* Option A: fixed height */
+    height: 240px;          /* pick whatever constant height you like */
+    
+    /* Option B: aspect ratio */
+  /*   aspect-ratio: 16 / 9;  /* or 4/3, 1/1, etc. */
+  
+    overflow: hidden;       /* crop anything outside the frame */
+    border-radius: 14px;    /* keep your rounded corners */
+    position: relative;     /* needed if you switch to absolute-positioning on the img */
+
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.7);
+  }
+
+.rf-ccard-img-full-wrapper img {
     -webkit-appearance: none;
     -webkit-box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
     box-shadow: 2px 2px 12px rgba(11, 11, 11, 0.2);
 
     -webkit-user-drag: none; 
     user-drag: none;
+
+    display: block;
+    width: 100%;
+    height: 135%;
+    object-fit: cover;
+
+    transform: translateY(-25%);
+    transition: transform 0.6s ease;
 }
+
+.rf-ccard-img-full-wrapper:hover img {
+    transform: translateY(-1%);
+  }
 
 /* Text overlay */
 .rf-ccard-overlay {
@@ -304,25 +328,44 @@ body, html {
     top: 0;
     left: 0;
     right: 0;
-    color: white;
-    background: transparent;
     padding: 21px;
-    font-size: 20px;
-    text-align: left;
+    color: #ffffff;
+    /* Make the entire overlay a container for the animation */
+    overflow: hidden;
+}
+
+.rf-ccard-overlay .first-txt,
+.rf-ccard-overlay .second-txt {
+    /* Hide by default - move above the card */
+    transform: translateY(-100%);
+    opacity: 0;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .rf-ccard-overlay .first-txt {
     font-size: 24px;
     margin-bottom: -24px;
     display: block;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+    /* Slight delay for first text */
+    transition-delay: 0.05s;
 }
 
 .rf-ccard-overlay .second-txt {
-    font-size: 17px;
+    font-size: 16px;
     display: block;
+    color: #999999;
     -webkit-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    /* Additional delay for second text */
+    transition-delay: 0.15s;
+}
+
+/* Apply the animation when hovering over the card item */
+.rf-cards-scroller-itemview:hover .rf-ccard-overlay .first-txt,
+.rf-cards-scroller-itemview:hover .rf-ccard-overlay .second-txt {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .card-footer {
@@ -568,7 +611,7 @@ body, html {
         margin-top: -45px;
     }
     .rf-cards-scroller-itemview {
-        width: 280px;
+        width: 310px;
     }
     .rf-ccard-overlay .first-txt {
         font-size: 22px;
@@ -576,6 +619,9 @@ body, html {
     .rf-ccard-overlay .second-txt {
         font-size: 16px;
         display: block;
+    }
+    .rf-ccard-img-full-wrapper:hover img {
+        transform: translateY(-4%);
     }
     .card-footer {
         font-size: 14px;
