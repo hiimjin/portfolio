@@ -669,6 +669,9 @@ body, html {
         padding: 0px;
         overflow: visible;
     }
+    .modal-overlay.show {
+        transition: opacity 0.3s ease 0.7s;
+    }
     .modal-close {
         position: absolute;
         color: #f9f6ef;
