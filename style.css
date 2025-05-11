@@ -342,30 +342,33 @@ body, html {
     transform: translateY(-100%);
     opacity: 0;
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Base transition for exiting - no delay when unhovered */
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .rf-ccard-overlay .first-txt {
     font-size: 24px;
     margin-bottom: -24px;
     display: block;
-    /* Slight delay for first text */
-    transition-delay: 0.04s;
 }
 
 .rf-ccard-overlay .second-txt {
     font-size: 16px;
     display: block;
-    color: #efefef;
-    /* Additional delay for second text */
-    transition-delay: 0.14s;
+    color: rgba(0, 0, 0, 0.5);
 }
 
-/* Apply the animation when hovering over the card item */
-.rf-cards-scroller-itemview:hover .rf-ccard-overlay .first-txt,
+/* Apply different transitions when hovering - with delays for staggered appearance */
+.rf-cards-scroller-itemview:hover .rf-ccard-overlay .first-txt {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s ease 0.04s, opacity 0.3s ease 0.04s;
+}
+
 .rf-cards-scroller-itemview:hover .rf-ccard-overlay .second-txt {
     transform: translateY(0);
     opacity: 1;
+    transition: transform 0.3s ease 0.14s, opacity 0.3s ease 0.14s;
 }
 
 .card-footer {
