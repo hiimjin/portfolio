@@ -670,7 +670,7 @@ body, html {
         overflow: visible;
     }
     .modal-overlay.show {
-        transition: opacity 0.3s ease 0.7s;
+        transition: opacity 0.3s ease 0.4s;
     }
     .modal-close {
         position: absolute;
