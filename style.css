@@ -43,21 +43,21 @@ body, html {
     background-size: contain;
     background-position: center 40px;
     z-index: -1;
-    animation: wipe-left-right 0.3s forwards ease;
+    animation: wipe-left-right 0.5s forwards ease;
 
 }
 
 .highlight1::before {
     background-image: url('images/highlights/highlight1.png');
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
 }
 .highlight2::before {
     background-image: url('images/highlights/highlight2.png');
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
 }
 .highlight3::before {
     background-image: url('images/highlights/highlight3.png');
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
 }
 
 @keyframes wipe-left-right {
@@ -115,8 +115,8 @@ body, html {
 
 /* Main */
 .main-content {
-    padding: 20px 20px;
-    padding-top: 15px;
+    padding: 0px 15px;
+    padding-top: 10px;
 }
 
 .intro-section {
@@ -173,6 +173,7 @@ body, html {
 .intro-text {
     margin-left: -80px;
     max-width: 320px;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
 }
 
 .intro-text h2 {
@@ -227,11 +228,13 @@ body, html {
 
 .rs-cards-shelf-mainheader {
     padding-left: 0;
-    padding-bottom: 4px;
+    padding-bottom: 14px;
     text-align: left;
     margin-right: 450px;
     font-size: 24px;
     font-weight: 400;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
+
 }
 
 .as-l-container {
@@ -321,7 +324,7 @@ body, html {
 }
 
 .rf-ccard-img-full-wrapper:hover img {
-    transform: translateY(-1%);
+    transform: translateY(-5%);
   }
 
 /* Text overlay */
@@ -331,7 +334,7 @@ body, html {
     left: 0;
     right: 0;
     padding: 21px;
-    color: #ffffff;
+    color: #000000;
     /* Make the entire overlay a container for the animation */
     overflow: hidden;
 }
@@ -341,21 +344,21 @@ body, html {
     /* Hide by default - move above the card */
     transform: translateY(-100%);
     opacity: 0;
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.15));
     /* Base transition for exiting - no delay when unhovered */
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .rf-ccard-overlay .first-txt {
     font-size: 25px;
-    margin-bottom: -23px;
+    margin-bottom: -25px;
     display: block;
 }
 
 .rf-ccard-overlay .second-txt {
     font-size: 16px;
     display: block;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Apply different transitions when hovering - with delays for staggered appearance */
