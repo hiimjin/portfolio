@@ -198,11 +198,11 @@ body, html {
 }
 
 .left-button {
-    left: calc(50% + 304px);
+    left: calc(50% + 243px);
 }
 
 .right-button {
-    left: calc(50% + 340px);
+    left: calc(50% + 280px);
 }
 
 .scroll-button:hover {
@@ -263,14 +263,14 @@ body, html {
 
 .rf-cards-scroller-content {
     display: flex;
-    gap: 5px;
+    gap: 17px;
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
     flex-shrink: 0;
     margin-top: 3px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .rf-cards-scroller-itemview {
