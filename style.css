@@ -227,7 +227,7 @@ body, html {
 }
 
 .rs-cards-shelf-mainheader {
-    padding-left: 0;
+    padding-left: 50px;
     padding-bottom: 14px;
     text-align: left;
     margin-right: 450px;
@@ -269,14 +269,14 @@ body, html {
     justify-content: flex-start;
     flex-shrink: 0;
     margin-top: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .rf-cards-scroller-itemview {
     flex: 0 0 auto;
-    width: 340px;
-    max-width: 340px;
+    width: 350px;
+    max-width: 350px;
     height: auto;
     background-color: transparent;
     border-radius: 10px;
@@ -294,7 +294,7 @@ body, html {
 .rf-ccard-img-full-wrapper {
     width: 100%;
     /* Option A: fixed height */
-    height: 240px;          /* pick whatever constant height you like */
+    height: 250px;          /* pick whatever constant height you like */
     
     /* Option B: aspect ratio */
   /*   aspect-ratio: 16 / 9;  /* or 4/3, 1/1, etc. */
