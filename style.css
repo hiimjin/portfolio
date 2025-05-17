@@ -123,7 +123,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 200px;
+    gap: 250px;
     padding-left: 20px;
 }
 
@@ -147,7 +147,7 @@ body, html {
 }
 
 .intro-text {
-    margin-left: -115px;
+    margin-left: -100px;
     max-width: 320px;
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
     line-height: 1.55;
@@ -162,7 +162,7 @@ body, html {
 
 .scroll-button {
     position: absolute;
-    top: -20%;
+    top: -21%;
     background-color: transparent;
     color: rgba(177, 138, 255, 0.6);
     border: none;
@@ -175,11 +175,11 @@ body, html {
 }
 
 .left-button {
-    left: calc(50% + 243px);
+    left: calc(50% + 263px);
 }
 
 .right-button {
-    left: calc(50% + 280px);
+    left: calc(50% + 295px);
 }
 
 .scroll-button:hover {
@@ -190,7 +190,7 @@ body, html {
 /* Cards */
 .rs-cards-shelf {
     max-width: 100%;
-    margin-top: -10px; /* Brings it up */
+    margin-top: -5px; /* Brings it up */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,8 +207,8 @@ body, html {
     padding-left: 0px;
     padding-bottom: 0px;
     text-align: left;
-    margin-right: 330px;
-    font-size: 24px;
+    margin-right: 0px;
+    font-size: 28px;
     font-weight: 400;
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
     line-height: 1.55;
@@ -314,28 +314,6 @@ body, html {
   color: #000000;
   /* Make the entire overlay a container for the animation */
   overflow: hidden;
-}
-
-/* Add a pseudo-element for the blur background behind text */
-.rf-ccard-overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 120px; /* Adjust based on your text height */
-  background: linear-gradient(to bottom, 
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 100%);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  z-index: -1;
-  /* Hide by default - move above the card */
-  transform: translateY(-100%);
-  opacity: 0;
-  /* Base transition for exiting - no delay when unhovered */
-  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .rf-ccard-overlay .first-txt,
